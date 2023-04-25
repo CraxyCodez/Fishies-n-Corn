@@ -32,7 +32,7 @@ public class Inventory : MonoBehaviour
                 newSlot.name = "ItemSlot_" + i;
                 newSlot.transform.SetParent(gameObject.transform.GetChild(0).transform);
                 slots[i] = newSlot;
-                itemImages[i] = newSlot.transform.GetChild(1);
+                //itemImages[i] = newSlot.transform.GetChild(1);
                 GetComponent<Image>();
             }
         }

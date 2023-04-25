@@ -17,7 +17,7 @@ public class MovementController : MonoBehaviour
     Inventory inventory;
 
 
-    public int corns;
+    public static int corns;
     public string selectedPlanter;
 
     // An enum is a set of enumerated constants.  Each constant is used to store an integer value to represent each animation state.
@@ -48,6 +48,11 @@ public class MovementController : MonoBehaviour
         // Call method to update animation state
         UpdateState();
 
+    }
+
+    int GetCornCount()
+    {
+        return corns;
     }
 
     void FixedUpdate()

@@ -46,7 +46,8 @@ public class Corn : MonoBehaviour
 
         if (harvestable && (Vector3.Distance(this.transform.position, player.transform.position) < 5))
         {
-            GameObject.Find("Dancing Plant Lady").GetComponent<MovementController>().corns++;
+            //GameObject.Find("Dancing Plant Lady").GetComponent<MovementController>().corns++;
+            MovementController.corns++;
             fatherPlot.GetComponent<Plot>().haveThing = false;
             Destroy(gameObject);
         }
