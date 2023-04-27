@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7317781697920822910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.93, y: -0.52, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.93, y: -0.52, z: -2}
+  m_LocalScale: {x: 0.2658004, y: 0.2815643, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -100,3 +100,4 @@ MonoBehaviour:
   bigSeedling: {fileID: 499197104858155296, guid: f371e32366f304379b2dae374fa5abdb, type: 3}
   fullGrown: {fileID: -5845703507610670755, guid: f371e32366f304379b2dae374fa5abdb, type: 3}
   player: {fileID: 0}
+  fatherPlot: {fileID: 0}

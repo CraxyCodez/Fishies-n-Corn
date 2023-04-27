@@ -1,15 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Corn : MonoBehaviour
 {
+    /// <summary>
+    ///
+    ///
+    ///
+    ///
+    ///
+    ///
+    ///
+    ///
+    ///
+    /// 
+    ///                           NOTE TO SELF ON FRIDAY APRIL 28 ADD THE DICTIONARY CONTAINING ALL THE PLOTS AND THEIR LOCATIONS, SO THAT A CORN CAN FIND IT'S PARENT PLOT
+    ///
+    ///
+    ///
+    ///
+    ///
+    /// 
+    ///
+    ///
+    ///
+    ///
+    /// 
+    /// </summary>
     public Sprite seed;
     public Sprite smallSeedling;
     public Sprite bigSeedling;
     public Sprite fullGrown;
     public GameObject player;
     public GameObject fatherPlot;
+    private GameObject selfSavePlayer;
+    private GameObject selfSaveFatherPlot;
     private int timeAtPlantation;
     private bool harvestable;
     Animator animator;
@@ -19,11 +46,15 @@ public class Corn : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         timeAtPlantation = (int)(Time.time);
+        selfSaveFatherPlot = fatherPlot;
+        selfSavePlayer = player;
     }
 
     // Update is called once per frame
     void Update()
     {
+        fatherPlot = selfSaveFatherPlot;
+        player = selfSavePlayer;
         harvestable = false;
         int timeAlive = (int)(Time.time) - timeAtPlantation;
         if (timeAlive < 5)
@@ -44,11 +75,12 @@ public class Corn : MonoBehaviour
             harvestable = true;
         }
 
-        if (harvestable && (Vector3.Distance(this.transform.position, player.transform.position) < 5))
+        if (harvestable && (Vector3.Distance(this.transform.position, player.transform.position) < 2))
         {
             //GameObject.Find("Dancing Plant Lady").GetComponent<MovementController>().corns++;
             MovementController.corns++;
             fatherPlot.GetComponent<Plot>().haveThing = false;
+            SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
             Destroy(gameObject);
         }
     }

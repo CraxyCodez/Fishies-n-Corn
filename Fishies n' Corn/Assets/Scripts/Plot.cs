@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Plot : MonoBehaviour
 {
@@ -18,10 +19,12 @@ public class Plot : MonoBehaviour
     {
         if(player.GetComponent<MovementController>().selectedPlanter == "corn" && !haveThing)
         {
-            Vector3 pos = new Vector3(transform.position.x, transform.position.y, -1);
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y, -2);
             thing = Instantiate(targetPrefab, pos, Quaternion.identity);
             thing.GetComponent<Corn>().player = player;
             thing.GetComponent<Corn>().fatherPlot = this.gameObject;
+            DontDestroyOnLoad(thing);
+            
             haveThing = true;
 
         }

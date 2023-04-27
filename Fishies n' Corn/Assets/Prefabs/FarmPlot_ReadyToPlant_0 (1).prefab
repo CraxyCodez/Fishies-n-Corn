@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5538652755116990334}
   - component: {fileID: 5538652755116990335}
-  - component: {fileID: 1617092850356710417}
   - component: {fileID: 5350927892396343330}
+  - component: {fileID: 6361853144350591566}
   m_Layer: 0
   m_Name: FarmPlot_ReadyToPlant_0 (1)
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5538652755116990328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.91, y: -2.88, z: 0}
+  m_LocalPosition: {x: -6.91, y: -2.88, z: -1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5279102331822289461, guid: 2858125d2c1754029b07bb51be1976d2, type: 3}
+  m_Sprite: {fileID: -2443498223381888283, guid: 5dd2e543b51aa4306a0985efbce26567, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,7 +84,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1617092850356710417
+--- !u!114 &5350927892396343330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5538652755116990328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb279919e8b5143c5b6bdb5516e6f65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  targetPrefab: {fileID: 7317781697920822910, guid: 26e3c570804ec48dab6ce7ddb41aac35, type: 3}
+  haveThing: 0
+--- !u!61 &6361853144350591566
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,27 +116,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.92, y: 1.92}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.92, y: 1.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.92, y: 1.92}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5350927892396343330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5538652755116990328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb279919e8b5143c5b6bdb5516e6f65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  targetPrefab: {fileID: 7317781697920822910, guid: 26e3c570804ec48dab6ce7ddb41aac35, type: 3}
-  haveThing: 0
