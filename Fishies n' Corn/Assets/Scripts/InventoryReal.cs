@@ -11,7 +11,9 @@ public class InventoryReal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // considering removing the inventory scene and replacing with inventory UI...
+
+        // ui not working, text and images not appearing
     }
 
     // Update is called once per frame

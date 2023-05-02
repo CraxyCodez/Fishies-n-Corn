@@ -16,7 +16,12 @@ public class Corn : MonoBehaviour
     ///
     ///
     /// 
-    ///                           NOTE TO SELF ON FRIDAY APRIL 28 ADD THE DICTIONARY CONTAINING ALL THE PLOTS AND THEIR LOCATIONS, SO THAT A CORN CAN FIND IT'S PARENT PLOT
+    ///                           (never mind this, this is history now)-----NOTE TO SELF ON FRIDAY APRIL 28 ADD THE DICTIONARY CONTAINING ALL THE PLOTS AND THEIR LOCATIONS, SO THAT A CORN CAN FIND IT'S PARENT PLOT--
+    ///
+    /// 
+    ///                           But now, plan is currently to make a pop up ui with plant icon (to save space) and TEXT MESH PRO << needed or it will be blurry.
+    ///                           ui will have a backbase, probably covering most of screen, if not all
+    ///                           quit button and counting, looking about the same as inventory scene
     ///
     ///
     ///
