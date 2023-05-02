@@ -13,7 +13,6 @@ public class MovementController : MonoBehaviour
     Animator animator;
     string animationState = "AnimationState";
     Rigidbody2D rb2D;
-    public Dictionary<float[], GameObject> storage = new Dictionary<float[], GameObject>();
     public Inventory inventoryPrefab;
     Inventory inventory;
 
@@ -48,7 +47,6 @@ public class MovementController : MonoBehaviour
     {
         // Call method to update animation state
         UpdateState();
-        Debug.Log(storage);
     }
 
     int GetCornCount()

@@ -5,9 +5,9 @@
       <File FileName="Assets/Scripts/MovementController.cs" Line="51" Column="28" />
       <File FileName="Assets/Scripts/Slot.cs" Line="21" Column="1" />
       <File FileName="Assets/Scripts/Plot.cs" Line="27" Column="89" />
-      <File FileName="Assets/Scripts/TestCarrotGrowingCycle.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TestCarrotGrowingCycle.cs" />
       <File FileName="Assets/Scripts/Inventory/Inventory.cs" />
-      <File FileName="Assets/Scripts/Item.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Item.cs" />
       <File FileName="Assets/Scripts/InventoryReal.cs" />
       <File FileName="Assets/Scripts/GameTeleporter.cs" />
     </Files>
@@ -28,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e8f59317-8e78-430b-8a4e-4fe4f70a8691" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9ba37455-4552-4cc2-9914-182b557de978" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
