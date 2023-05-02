@@ -23,6 +23,8 @@ public class Plot : MonoBehaviour
             thing = Instantiate(targetPrefab, pos, Quaternion.identity);
             thing.GetComponent<Corn>().player = player;
             thing.GetComponent<Corn>().fatherPlot = this.gameObject;
+            float[] lis = { transform.position.x, transform.position.y };
+            player.GetComponent<MovementController>().storage.Add(lis, this.gameObject);
             DontDestroyOnLoad(thing);
             
             haveThing = true;

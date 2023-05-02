@@ -39,6 +39,7 @@ public class Corn : MonoBehaviour
     private GameObject selfSaveFatherPlot;
     private int timeAtPlantation;
     private bool harvestable;
+    private float[] selfPos;
     Animator animator;
 
     // Start is called before the first frame update
@@ -46,15 +47,17 @@ public class Corn : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         timeAtPlantation = (int)(Time.time);
-        selfSaveFatherPlot = fatherPlot;
-        selfSavePlayer = player;
-    }
 
+    }
     // Update is called once per frame
     void Update()
     {
-        fatherPlot = selfSaveFatherPlot;
-        player = selfSavePlayer;
+        // point is to find the Dancing Lady's dictionary, and get the plot associated with the position, so take the corn's position and then find a matching position that leads to the correct plot
+        player = GameObject.Find("Dancing Plant Lady");
+        float[] selfPos = { transform.position.x, transform.position.y };
+
+        fatherPlot = player.GetComponent<MovementController>().storage[selfPos];
+        
         harvestable = false;
         int timeAlive = (int)(Time.time) - timeAtPlantation;
         if (timeAlive < 5)
