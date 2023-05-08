@@ -62,6 +62,7 @@
     <Compile Include="Assets/Scripts/GameTeleporter.cs" />
     <Compile Include="Assets/Scripts/Inventory/Inventory.cs" />
     <Compile Include="Assets/Scripts/MovementController.cs" />
+    <Compile Include="Assets/Scripts/InventoryFORREALLS.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

@@ -1,6 +1,7 @@
 ﻿<Properties StartupConfiguration="{E602FB60-1B11-AB89-B041-27CDE9C9D567}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MovementController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InventoryFORREALLS.cs">
     <Files>
+      <File FileName="Assets/Scripts/InventoryFORREALLS.cs" Line="21" Column="10" />
       <File FileName="Assets/Scripts/Corn.cs" Line="26" Column="8" />
       <File FileName="Assets/Scripts/MovementController.cs" Line="49" Column="23" />
       <File FileName="Assets/Scripts/Slot.cs" />
@@ -15,9 +16,10 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Fishies n' Corn" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
+            <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Inventory" expanded="True" />
+                <Node name="InventoryFORREALLS.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="37480ea1-2cfa-4b98-823e-32d01d6e9ed0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0b45b014-9873-4446-bd83-f56c228c4a27" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
