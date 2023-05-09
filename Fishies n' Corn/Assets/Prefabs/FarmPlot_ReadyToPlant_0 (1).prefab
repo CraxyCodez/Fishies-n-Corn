@@ -96,8 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb279919e8b5143c5b6bdb5516e6f65e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  targetPrefab: {fileID: 7317781697920822910, guid: 26e3c570804ec48dab6ce7ddb41aac35, type: 3}
+  player: {fileID: 1861716015668184578, guid: 2761f38fc55414efc9eca23087e1abe6, type: 3}
+  targetCornPrefab: {fileID: 7317781697920822910, guid: 26e3c570804ec48dab6ce7ddb41aac35, type: 3}
+  targetTomaPrefab: {fileID: 1940661824337054431, guid: 4dc0fbdf74da64ea8a19eae8044865e1, type: 3}
   haveThing: 0
 --- !u!61 &6361853144350591566
 BoxCollider2D:

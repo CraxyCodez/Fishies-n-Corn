@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class Plot : MonoBehaviour
 {
     public GameObject player;
-    public GameObject targetPrefab;
+    public GameObject targetCornPrefab;
+    public GameObject targetTomaPrefab;
     private GameObject thing;
     public bool haveThing = false;
 
@@ -17,16 +18,26 @@ public class Plot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(player.GetComponent<MovementController>().selectedPlanter == "corn" && !haveThing)
+        if (player.GetComponent<MovementController>().selectedPlanter == "corn" && !haveThing)
         {
             Vector3 pos = new Vector3(transform.position.x, transform.position.y, -2);
-            thing = Instantiate(targetPrefab, pos, Quaternion.identity);
+            thing = Instantiate(targetCornPrefab, pos, Quaternion.identity);
             thing.GetComponent<Corn>().player = player;
             thing.GetComponent<Corn>().fatherPlot = this.gameObject;
             DontDestroyOnLoad(thing);
-            
+
             haveThing = true;
 
+        }
+        else if (player.GetComponent<MovementController>().selectedPlanter == "tomato" && !haveThing)
+        {
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y, -2);
+            thing = Instantiate(targetTomaPrefab, pos, Quaternion.identity);
+            thing.GetComponent<Tomato>().player = player;
+            thing.GetComponent<Tomato>().fatherPlot = this.gameObject;
+            DontDestroyOnLoad(thing);
+
+            haveThing = true;
         }
     }
 
