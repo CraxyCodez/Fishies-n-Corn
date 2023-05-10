@@ -94,6 +94,7 @@ public class Corn : MonoBehaviour
         {
             //GameObject.Find("Dancing Plant Lady").GetComponent<MovementController>().corns++;
             MovementController.corns++;
+            player.GetComponent<MovementController>().wealth += 1.0;
             fatherPlot.GetComponent<Plot>().haveThing = false;
             SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
             Destroy(gameObject);

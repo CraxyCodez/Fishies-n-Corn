@@ -17,6 +17,8 @@ public class MovementController : MonoBehaviour
     Inventory inventory;
 
 
+    public double wealth;
+
     public static int corns;
     public static int tomatos;
     public string selectedPlanter;
@@ -38,7 +40,7 @@ public class MovementController : MonoBehaviour
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
 
-        selectedPlanter = "corn";
+        selectedPlanter = "blank";
 
         inventory = Instantiate(inventoryPrefab);
 
@@ -48,6 +50,14 @@ public class MovementController : MonoBehaviour
     {
         // Call method to update animation state
         UpdateState();
+        if(Input.GetKeyDown("1"))
+        {
+            selectedPlanter = "corn";
+        }
+        else if (Input.GetKeyDown("2"))
+        {
+            selectedPlanter = "tomato";
+        }
     }
 
     int GetCornCount()

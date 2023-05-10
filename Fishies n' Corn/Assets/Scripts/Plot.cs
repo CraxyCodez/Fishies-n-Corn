@@ -18,23 +18,29 @@ public class Plot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (player.GetComponent<MovementController>().selectedPlanter == "corn" && !haveThing)
+        if (player.GetComponent<MovementController>().selectedPlanter == "corn" && !haveThing && player.GetComponent<MovementController>().wealth >= 0.5)
         {
+            player.GetComponent<MovementController>().wealth -= 0.5;
+            player.GetComponent<MovementController>().selectedPlanter = "blank";
             Vector3 pos = new Vector3(transform.position.x, transform.position.y, -2);
             thing = Instantiate(targetCornPrefab, pos, Quaternion.identity);
             thing.GetComponent<Corn>().player = player;
             thing.GetComponent<Corn>().fatherPlot = this.gameObject;
+            
             DontDestroyOnLoad(thing);
 
             haveThing = true;
 
         }
-        else if (player.GetComponent<MovementController>().selectedPlanter == "tomato" && !haveThing)
+        else if (player.GetComponent<MovementController>().selectedPlanter == "tomato" && !haveThing && player.GetComponent<MovementController>().wealth >= 5.0)
         {
+            player.GetComponent<MovementController>().wealth -= 5.0;
+            player.GetComponent<MovementController>().selectedPlanter = "blank";
             Vector3 pos = new Vector3(transform.position.x, transform.position.y, -2);
             thing = Instantiate(targetTomaPrefab, pos, Quaternion.identity);
             thing.GetComponent<Tomato>().player = player;
             thing.GetComponent<Tomato>().fatherPlot = this.gameObject;
+
             DontDestroyOnLoad(thing);
 
             haveThing = true;

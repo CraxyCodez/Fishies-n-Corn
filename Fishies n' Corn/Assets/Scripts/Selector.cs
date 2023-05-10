@@ -5,6 +5,7 @@ using UnityEngine;
 public class Selector : MonoBehaviour
 {
     public string direction;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +18,13 @@ public class Selector : MonoBehaviour
         
     }
 
+    private void Awake()
+    {
+        
+    }
+
     private void OnMouseDown()
     {
-        GameObject thing = GameObject.Find("Dancing Plant Lady");
-        thing.GetComponent<MovementController>().selectedPlanter = "tomato";
+        player.GetComponent<MovementController>().selectedPlanter = direction;
     }
 }

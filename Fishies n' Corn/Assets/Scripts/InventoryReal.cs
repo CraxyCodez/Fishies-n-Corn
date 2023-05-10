@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class InventoryReal : MonoBehaviour
 {
     public Text cornBox;
+    public Text tomatoBox;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class InventoryReal : MonoBehaviour
     void Update()
     {
         cornBox.text = "" + MovementController.corns;
+        tomatoBox.text = "" + MovementController.tomatos;
     }
     public void GoHome()
     {
