@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class InventoryReal : MonoBehaviour
 {
+    public GameObject player;
+    public Text moneyBox;
     public Text cornBox;
     public Text tomatoBox;
 
@@ -20,6 +22,7 @@ public class InventoryReal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moneyBox.text = "$" + player.GetComponent<MovementController>().wealth;
         cornBox.text = "" + MovementController.corns;
         tomatoBox.text = "" + MovementController.tomatos;
     }

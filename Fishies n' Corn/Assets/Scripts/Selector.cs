@@ -23,8 +23,8 @@ public class Selector : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
-    {
-        player.GetComponent<MovementController>().selectedPlanter = direction;
-    }
+    //private void OnMouseDown()
+    //{
+    //    player.GetComponent<MovementController>().selectedPlanter = direction;
+    //}
 }

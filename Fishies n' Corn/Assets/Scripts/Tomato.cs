@@ -66,6 +66,7 @@ public class Tomato : MonoBehaviour
             //GameObject.Find("Dancing Plant Lady").GetComponent<MovementController>().corns++;
             MovementController.tomatos++;
             player.GetComponent<MovementController>().wealth += 7.0;
+            player.GetComponent<MovementController>().handIcon.SetActive(false);
             fatherPlot.GetComponent<Plot>().haveThing = false;
             SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
             Destroy(gameObject);

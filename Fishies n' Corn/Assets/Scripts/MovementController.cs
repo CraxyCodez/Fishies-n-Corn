@@ -16,6 +16,9 @@ public class MovementController : MonoBehaviour
     public Inventory inventoryPrefab;
     Inventory inventory;
 
+    public GameObject handIcon;
+    public Sprite cornSprite;
+    public Sprite tomatoSprite;
 
     public double wealth;
 
@@ -39,8 +42,10 @@ public class MovementController : MonoBehaviour
         // get components for animation and movement
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        wealth = 2.0;
 
         selectedPlanter = "blank";
+        handIcon.SetActive(false);
 
         inventory = Instantiate(inventoryPrefab);
 
@@ -53,10 +58,14 @@ public class MovementController : MonoBehaviour
         if(Input.GetKeyDown("1"))
         {
             selectedPlanter = "corn";
+            handIcon.SetActive(true);
+            handIcon.GetComponent<SpriteRenderer>().sprite = cornSprite;
         }
         else if (Input.GetKeyDown("2"))
         {
             selectedPlanter = "tomato";
+            handIcon.SetActive(true);
+            handIcon.GetComponent<SpriteRenderer>().sprite = tomatoSprite;
         }
     }
 
@@ -89,7 +98,6 @@ public class MovementController : MonoBehaviour
 
     private void UpdateState()
     {
-        Debug.Log("Corns: " + corns);
         //Debug.Log(animator.GetInteger(animationState));
         // Setting character animation state based on movement direction.
         if (movement.x > 0)

@@ -61,6 +61,7 @@ public class Corn : MonoBehaviour
 
 
         // point or aim is to find the Dancing Lady's dictionary, and get the plot associated with the position, so take the corn's position and then find a matching position that leads to the correct plot
+        // new comment: this upper comment is not needed anymore
 
 
 
@@ -95,6 +96,7 @@ public class Corn : MonoBehaviour
             //GameObject.Find("Dancing Plant Lady").GetComponent<MovementController>().corns++;
             MovementController.corns++;
             player.GetComponent<MovementController>().wealth += 1.0;
+            player.GetComponent<MovementController>().handIcon.SetActive(false);
             fatherPlot.GetComponent<Plot>().haveThing = false;
             SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetActiveScene());
             Destroy(gameObject);
