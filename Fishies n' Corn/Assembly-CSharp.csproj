@@ -58,13 +58,14 @@
     <Compile Include="Assets/Scripts/Item.cs" />
     <Compile Include="Assets/Scripts/InventoryFORREALLS.cs" />
     <Compile Include="Assets/Scripts/TestCarrotGrowingCycle.cs" />
+    <Compile Include="Assets/Scripts/Selector.cs" />
     <Compile Include="Assets/Scripts/InventoryReal.cs" />
     <Compile Include="Assets/Scripts/Slot.cs" />
+    <Compile Include="Assets/Scripts/Tomato.cs" />
     <Compile Include="Assets/Scripts/GameTeleporter.cs" />
     <Compile Include="Assets/Scripts/Inventory/Inventory.cs" />
     <Compile Include="Assets/Scripts/MovementController.cs" />
-    <Compile Include="Assets/Scripts/Tomato.cs" />
-    <Compile Include="Assets/Scripts/Selector.cs" />
+    <Compile Include="Assets/Scripts/HandDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
