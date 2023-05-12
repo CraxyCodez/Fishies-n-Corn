@@ -16,7 +16,6 @@ public class MovementController : MonoBehaviour
     public Inventory inventoryPrefab;
     Inventory inventory;
 
-    public GameObject handIcon;
     public Sprite cornSprite;
     public Sprite tomatoSprite;
 
@@ -45,7 +44,6 @@ public class MovementController : MonoBehaviour
         wealth = 2.0;
 
         selectedPlanter = "blank";
-        handIcon.SetActive(false);
 
         inventory = Instantiate(inventoryPrefab);
 
@@ -58,14 +56,10 @@ public class MovementController : MonoBehaviour
         if(Input.GetKeyDown("1"))
         {
             selectedPlanter = "corn";
-            handIcon.SetActive(true);
-            handIcon.GetComponent<SpriteRenderer>().sprite = cornSprite;
         }
         else if (Input.GetKeyDown("2"))
         {
             selectedPlanter = "tomato";
-            handIcon.SetActive(true);
-            handIcon.GetComponent<SpriteRenderer>().sprite = tomatoSprite;
         }
     }
 
