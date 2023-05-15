@@ -18,7 +18,6 @@ public class HandDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("test");
         if (player.GetComponent<MovementController>().selectedPlanter == "blank")
         {
             this.gameObject.SetActive(false);
