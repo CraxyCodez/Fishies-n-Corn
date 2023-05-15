@@ -1252,7 +1252,7 @@ GameObject:
   - component: {fileID: 501886631}
   - component: {fileID: 501886630}
   m_Layer: 5
-  m_Name: Text
+  m_Name: quit game? text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1707,6 +1707,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &643997221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643997222}
+  - component: {fileID: 643997224}
+  - component: {fileID: 643997223}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &643997222
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643997221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1193182310}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -106.37, y: -149}
+  m_SizeDelta: {x: 515.52, y: 41.587}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &643997223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643997221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Use WASD to move, click to plant; get close to a plant to harvest, [E]
+    to open/close inventory
+--- !u!222 &643997224
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643997221}
+  m_CullTransparentMesh: 1
 --- !u!1 &654227524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2639,6 +2719,7 @@ RectTransform:
   - {fileID: 1230219}
   - {fileID: 719321860}
   - {fileID: 654494223}
+  - {fileID: 643997222}
   m_Father: {fileID: 2137149791}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5626,7 +5707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 359.2, y: 196.7}
+  m_AnchoredPosition: {x: 359.19995, y: 196.7}
   m_SizeDelta: {x: 51.6658, y: 51.6658}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387574676
@@ -24284,6 +24365,10 @@ PrefabInstance:
       propertyPath: cornSprite
       value: 
       objectReference: {fileID: 21300000, guid: 54da327bc8b7f4c0794768e6597cf3d4, type: 3}
+    - target: {fileID: 1861716015668184579, guid: 2761f38fc55414efc9eca23087e1abe6, type: 3}
+      propertyPath: handDisplay
+      value: 
+      objectReference: {fileID: 1387574674}
     - target: {fileID: 1861716015668184579, guid: 2761f38fc55414efc9eca23087e1abe6, type: 3}
       propertyPath: tomatoSprite
       value: 

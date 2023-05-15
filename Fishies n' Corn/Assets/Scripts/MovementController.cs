@@ -14,6 +14,7 @@ public class MovementController : MonoBehaviour
     string animationState = "AnimationState";
     Rigidbody2D rb2D;
     public Inventory inventoryPrefab;
+    public GameObject handDisplay;
     Inventory inventory;
 
     public Sprite cornSprite;
@@ -56,10 +57,12 @@ public class MovementController : MonoBehaviour
         if(Input.GetKeyDown("1"))
         {
             selectedPlanter = "corn";
+            handDisplay.SetActive(true);
         }
         else if (Input.GetKeyDown("2"))
         {
             selectedPlanter = "tomato";
+            handDisplay.SetActive(true);
         }
     }
 

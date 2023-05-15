@@ -99,33 +99,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1484}
     - Class: 114
-      Script: {instanceID: 1604}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1884}
+      Script: {instanceID: 1882}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 2014}
     - Class: 114
-      Script: {instanceID: 2286}
+      Script: {instanceID: 2284}
     - Class: 114
-      Script: {instanceID: 2294}
+      Script: {instanceID: 2292}
     - Class: 114
-      Script: {instanceID: 2470}
+      Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2732}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 2820}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 2916}
+      Script: {instanceID: 2914}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3000}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 3052}
     - Class: 114
-      Script: {instanceID: 3112}
+      Script: {instanceID: 3110}
+    - Class: 114
+      Script: {instanceID: 3246}
     - Class: 114
       Script: {instanceID: 3278}
     - Class: 114
@@ -146,8 +148,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5346}
     - Class: 114
       Script: {instanceID: 5824}
-    - Class: 114
-      Script: {instanceID: 22974}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -192,11 +192,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1482}
     - Class: 114
-      Script: {instanceID: 2294}
+      Script: {instanceID: 2292}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2732}
     - Class: 114
-      Script: {instanceID: 2916}
+      Script: {instanceID: 2914}
     - Class: 114
       Script: {instanceID: 3278}
     - Class: 114
@@ -570,6 +570,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: LimbSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 94f702e130e9a6ad3d94fbb9b36700c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HandDisplay
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1004,7 +1010,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: f30352d207ab7df7046d2bf8d274f46c
+      Hash: 5cb208b202c2a4c01c638801ee24924b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementController
@@ -1098,12 +1104,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 94f702e130e9a6ad3d94fbb9b36700c7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HandDisplay
   platform: 2
   scenePathNames:
   - Assets/Scenes/Game.unity
